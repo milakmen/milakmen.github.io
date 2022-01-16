@@ -12,9 +12,11 @@ a {
 }
 
 h1 {
+    position: relative;
     margin: 12px auto;
 }
 
 p {
+    position: relative;
     margin: 6px auto;
 }
