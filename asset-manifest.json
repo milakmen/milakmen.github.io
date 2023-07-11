@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/milakmen.github.io/static/css/main.3377d882.css",
+    "main.js": "/milakmen.github.io/static/js/main.129d0442.js",
+    "static/js/787.e79825b5.chunk.js": "/milakmen.github.io/static/js/787.e79825b5.chunk.js",
+    "static/media/shashank-duhan.jpg": "/milakmen.github.io/static/media/shashank-duhan.d3d6bf94568e5d3201e0.jpg",
+    "index.html": "/milakmen.github.io/index.html",
+    "main.3377d882.css.map": "/milakmen.github.io/static/css/main.3377d882.css.map",
+    "main.129d0442.js.map": "/milakmen.github.io/static/js/main.129d0442.js.map",
+    "787.e79825b5.chunk.js.map": "/milakmen.github.io/static/js/787.e79825b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3377d882.css",
+    "static/js/main.129d0442.js"
+  ]
+}
