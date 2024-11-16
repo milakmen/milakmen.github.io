@@ -3,6 +3,7 @@ import {
     Link,
 } from "react-router-dom";
 import HeaderBar from "../../components/header-bar/HeaderBar";
+import "./project-list.css";
 
 function ProjectsListRouter(props) {
     
@@ -16,10 +17,22 @@ function ProjectsListRouter(props) {
 
 function ProjectsList() {
     return (
-        <>
-            <Link to="project1">Thumbnail 1</Link>
-            <div>Thumbnail 2</div>
-        </>
+        <div className="projects-list-container">
+            <Link to="https://github.com/shashankduhan/reflex-js">
+                <div className="thumbnail">
+                    <span>reflex-flow</span>
+                </div>
+            </Link>
+            <Link to="https://interviewprojectnz.com/">
+                <div className="thumbnail">
+                    <span>
+                        <span className="block">Interview Project</span>
+                        New Zealand
+                    </span>
+                </div>
+            </Link>
+            
+        </div>
     )
 }
 

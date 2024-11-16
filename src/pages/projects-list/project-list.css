@@ -1,0 +1,16 @@
+.projects-list-container {
+    display: flex;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    bordeR: 1px solid white;
+    display: inline-flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}

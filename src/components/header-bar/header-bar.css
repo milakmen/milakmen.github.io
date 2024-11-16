@@ -1,0 +1,14 @@
+header {
+    width: 100vw;
+}
+
+.header-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.back-navigator {
+    cursor: pointer;
+}
