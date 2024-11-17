@@ -1,15 +1,55 @@
-import React from "react";
+import { useEffect, useRef, useState } from 'react';
 import HeaderBar from "../../components/header-bar/HeaderBar";
+import Car from './libs/car';
+import Road from './libs/road';
+
+function CarAutoDrive() {
+  const [ animationCalled, setAnimationCalled ] = useState(false);
+  const [car, setCar] = useState(null);
+  const [road, setRoad] = useState(null);
+  const canvas = useRef(null);
+
+  useEffect(
+    () => {
+      setRoad(new Road(canvas.current.width/2, canvas.current.width*0.9));
+      
+    }, []
+  );
+
+  useEffect(() => {
+    if(road && car && !animationCalled) {
+      
+      animate();
+      setAnimationCalled(true);
+    } else if(road && !car) {
+      setCar(new Car(road.getLaneCenter(1), 100, 50, 70));
+    }
+  }, [road, car])
+
+  const animate = () => {
+    const ctx = canvas.current.getContext('2d');
+
+    car.update();
+
+    canvas.current.height = window.innerHeight;
+
+    ctx.save();
+    ctx.translate(0, -car.y+ canvas.current.height*0.7);
+
+    road.draw(ctx);
+    car.draw(ctx);
+    requestAnimationFrame(animate);
+  }
 
 
-export default function ProjectOne() {
-
-
-    return (
-        <>
-            <HeaderBar />
-            <div>One</div>
-        </>
-        
-    )
+  return (
+    <>
+        <HeaderBar />
+        <div className="canvas">
+        <canvas ref={canvas} id="canvas" width="250" height="500"></canvas>
+        </div>
+    </>
+  );
 }
+
+export default CarAutoDrive;

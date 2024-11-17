@@ -1,5 +1,9 @@
 header {
     width: 100vw;
+    /* z-index:1000000;
+    position: fixed; */
+    background: #282c34;
+    color: #fff;
 }
 
 .header-content {

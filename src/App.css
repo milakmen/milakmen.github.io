@@ -41,6 +41,7 @@
   background-color: #282c34;
   min-height: 100vh;
   color: white;
+  width: 100vw;
 }
 
 .block {
@@ -54,4 +55,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+canvas {
+  background-color: lightgrey;
 }
