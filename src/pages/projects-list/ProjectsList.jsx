@@ -18,12 +18,12 @@ function ProjectsListRouter(props) {
 function ProjectsList() {
     return (
         <div className="projects-list-container">
-            <Link to="https://github.com/shashankduhan/reflex-js">
+            <Link to="https://github.com/shashankduhan/reflex-js" className="link">
                 <div className="thumbnail">
                     <span>reflex-flow</span>
                 </div>
             </Link>
-            <Link to="https://interviewprojectnz.com/">
+            <Link to="https://interviewprojectnz.com/" className="link">
                 <div className="thumbnail">
                     <span>
                         <span className="block">Interview Project</span>
@@ -31,21 +31,14 @@ function ProjectsList() {
                     </span>
                 </div>
             </Link>
-            {/* <Link to="/projects/project1">
-                <div className="thumbnail">
-                    <span>
-                        <span className="block">Autodrive</span>
-                    </span>
-                </div>
-            </Link> */}
-            <Link to="/projects/preloader-football">
+            <Link to="/projects/preloader-football" className="link">
                 <div className="thumbnail">
                     <span>
                         <span className="block">Preloader Football</span>
                     </span>
                 </div>
             </Link>
-            <Link to="/projects/card-widget">
+            <Link to="/projects/card-widget" className="link">
                 <div className="thumbnail">
                     <span>
                         <span className="block">Card Widget</span>

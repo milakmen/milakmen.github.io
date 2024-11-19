@@ -1,6 +1,6 @@
 import React, { StrictMode, Suspense, useState } from "react";
-import { faker } from "https://esm.sh/@faker-js/faker";
-import useWebAnimations from "https://esm.sh/@wellyshen/use-web-animations";
+import { faker } from "@faker-js/faker";
+import useWebAnimations from "@wellyshen/use-web-animations";
 import "./card-widget.css";
 import HeaderBar from "../../components/header-bar/HeaderBar";
 
